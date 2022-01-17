@@ -27,7 +27,7 @@ currentTime(); /* calling currentTime() function to initiate the process */
 
 // Unsplash API
 const requestUrl =
-      'https://api.unsplash.com/search/photos?query=wallpaper&client_id=[APIKEY]';
+      'https://api.unsplash.com/search/photos?query=wallpaper&client_id=${{ secrets.Unsplash }}';
 const getImagesButton = document.querySelector('.getImagesButton');
 const imageToDisplay = document.querySelector('body');
 
